@@ -2,9 +2,8 @@ name: Cron Action
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *'
-
-
+    - cron: '*/1 * * * *'
+    
 jobs:
   rss2telegram:
     runs-on: ubuntu-latest
