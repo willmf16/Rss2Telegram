@@ -11,6 +11,7 @@ import random
 import requests
 import sqlite3
 
+
 def get_variable(variable):
     if not os.environ.get(f'{variable}'):
         var_file = open(f'{variable}.txt', 'r')
